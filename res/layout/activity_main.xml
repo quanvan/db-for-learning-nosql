@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ban"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/phinh2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="65dp"
+            android:text="1000"
+            android:textColor="#FF0000" />
+
+       
+			 <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:button="@drawable/hinhamthanh"
+            android:text="@null" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="0.34"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gv_BanCo"
+            android:layout_width="wrap_content"
+            android:layout_height="233dp"
+            android:numColumns="3"
+            android:verticalSpacing="20dp" >
+        </GridView>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="200dp" >
+
+            <ImageView
+                android:id="@+id/xiNgau1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hinhdongxingau" />
+
+            <ImageView
+                android:id="@+id/xiNgau2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hinhdongxingau" />
+
+            <ImageView
+                android:id="@+id/xiNgau3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="LacXiNgau"
+                android:src="@drawable/hinhdongxingau" />
+        </LinearLayout>
+        
+     
+</LinearLayout>
